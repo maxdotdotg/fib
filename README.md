@@ -1,3 +1,3 @@
 # fib
-Generate the nth [fibonacci number](https://en.wikipedia.org/wiki/Fibonacci_number)
+Generate the nth [fibonacci number](https://en.wikipedia.org/wiki/Fibonacci_number) from user input.
 

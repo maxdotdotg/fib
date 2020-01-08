@@ -24,7 +24,17 @@ fn main() {
         break count;
     };
 
-    println!("count is {}", count);
-
     // generate the sequence, and return the number, I guess?
+    println!("fib number {} is {}", count, fibonacci(count));
+}
+
+// recursive function!
+// https://benjaminbrandt.com/fibonacci-in-rust/
+
+fn fibonacci(n: u32) -> u32 {
+    match n {
+        0 => 1,
+        1 => 1,
+        _ => fibonacci(n-1) + fibonacci(n-2),
+    }
 }
