@@ -8,13 +8,13 @@
 use std::io;
 
 fn main() {
-
     // get desired count, cast to int
     let count = loop {
         println!("enter a number");
 
         let mut count = String::new();
-        io::stdin().read_line(&mut count)
+        io::stdin()
+            .read_line(&mut count)
             .expect("failed to read line");
 
         let count: u32 = match count.trim().parse() {
@@ -35,6 +35,6 @@ fn fibonacci(n: u32) -> u32 {
     match n {
         0 => 1,
         1 => 1,
-        _ => fibonacci(n-1) + fibonacci(n-2),
+        _ => fibonacci(n - 1) + fibonacci(n - 2),
     }
 }
